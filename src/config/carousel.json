@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "title": "Experiencia",
+      "description": "Nuestros trabajadores tienen años de experiencia en el campo de la remodelación y el acabado, lo que nos permite brindar un servicio de alta calidad y terminaciones impecables.",
+      "image": "/undraw/under-done.svg"
+    },
+    {
+      "title": "Personalización",
+      "description": "Ofrecemos una amplia variedad de opciones de diseño y personalización para que pueda obtener exactamente lo que está buscando. Trabajamos estrechamente con usted para asegurarnos de que sus expectativas se cumplan y de que quede satisfecho con el resultado final.",
+      "image": "/undraw/under-customize.svg"
+    },
+    {
+      "title": "Rapidez",
+      "description": "Sabemos que su tiempo es valioso, por lo que trabajamos de manera eficiente para minimizar los tiempos de inactividad y entregar su proyecto a tiempo.",
+      "image": "/undraw/under-fast.svg"
+    },
+    {
+      "title": "Precios competitivos",
+      "description": "Ofrecemos precios competitivos para nuestros servicios, sin comprometer la calidad del trabajo.",
+      "image": "/undraw/under-prices.svg"
+    },
+    {
+      "title": "Satisfacción del cliente",
+      "description": "Nuestro objetivo principal es la satisfacción del cliente. Nos esforzamos por exceder sus expectativas en cada proyecto y estamos dispuestos a hacer lo que sea necesario para asegurarnos de que quede completamente satisfecho con nuestro trabajo.",
+      "image": "/undraw/under-satisfied.svg"
+    },
+    {
+      "title": "Garantía",
+      "description": "Todos nuestros trabajos están garantizados. Si no está satisfecho con el trabajo realizado, lo arreglaremos de inmediato.",
+      "image": "/undraw/under-guarantee.svg"
+    }
+  ]
+}

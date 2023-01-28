@@ -1,0 +1,59 @@
+---
+import data from "./../config/carousel.json";
+
+const { items } = data;
+---
+
+<div class="carousel relative my-5">
+  <div class="carousel-items flex gap-5 px-5 overflow-hidden">
+    {
+      items.map((item) => (
+        <div class="flex flex-col min-w-[260px] max-w-[260px]">
+          <img src={item.image} class="h-48 md:h-60" alt="" />
+          <h1 class="text-3xl my-3 text-center text-orange-600 border-b-2 border-orange-600">
+            {item.title}
+          </h1>
+          <p class="text-lg">{item.description}</p>
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Buttons -->
+  <button
+    class="carousel-left absolute left-0 top-[50%] translate-y-[-50%] text-5xl text-orange-600"
+    ><i class="fa-solid fa-chevron-left"></i></button
+  >
+  <button
+    class="carousel-right absolute right-0 top-[50%] translate-y-[-50%] text-5xl text-orange-600"
+    ><i class="fa-solid fa-chevron-right"></i></button
+  >
+</div>
+
+<script>
+  const carouselItems = document.querySelector(".carousel-items");
+  const lefutButton = document.querySelector(".carousel-left");
+  const rightButton = document.querySelector(".carousel-right");
+
+  const GAP = 10;
+  const PADDING = 10;
+  const WIDTH = 260;
+
+  if (carouselItems) {
+    lefutButton &&
+      lefutButton.addEventListener("click", () => {
+        carouselItems.scrollBy({
+          left: -WIDTH - GAP - PADDING,
+          behavior: "smooth",
+        });
+      });
+
+    rightButton &&
+      rightButton.addEventListener("click", () => {
+        carouselItems.scrollBy({
+          left: WIDTH + GAP + PADDING,
+          behavior: "smooth",
+        });
+      });
+  }
+</script>

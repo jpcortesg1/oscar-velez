@@ -1,0 +1,68 @@
+---
+import data from "./../config/top-bar.json";
+
+const { items } = data;
+---
+
+<nav
+  class="w-full border-b-2 border-orange-600 fixed top-0 ease-in-out duration-300 z-50"
+>
+  <div class="container flex justify-between m-auto items-center">
+    <a href="#home" class="logo text-2xl font-bold text-zinc-50 cursor-pointer">
+      Oscar Vélez
+    </a>
+    <ul
+      class="items absolute top-16 left-[50%] translate-x-[-50%] w-[90%] bg-orange-600 rounded-md hidden md:flex md:relative md:top-0 md:left-0 md:translate-x-0 md:w-auto md:bg-transparent md:flex-row md:gap-3 md:rounded-none md:shadow-none md:items-center md:justify-between"
+    >
+      {
+        items.map((item) => (
+          <li class="m-auto text-center text-zinc-200 100 py-3 text-xl md:text-lg md:m-0  md:hover:text-zinc-50">
+            <a href={item.href}>{item.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="social-media hidden md:flex gap-3">
+      <span class="text-zinc-50 text-xl cursor-pointer"
+        ><i class="fa-brands fa-facebook-f"></i></span
+      >
+      <span class="text-zinc-50 text-xl cursor-pointer"
+        ><i class="fa-brands fa-whatsapp"></i></span
+      >
+    </div>
+    <div
+      class="toggle-burer cursor-pointer md:hidden flex justify-center items-center"
+    >
+      <span
+        class="toggle-burer flex justify-center items-center text-zinc-50 text-xl cursor-pointer"
+        ><i class="fa-solid fa-bars"></i></span
+      >
+    </div>
+  </div>
+</nav>
+
+<script>
+  const hamburger = document.querySelector(".toggle-burer");
+  const items = document.querySelector(".items");
+  const nav = document.querySelector("nav");
+
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      items && items.classList.toggle("hidden");
+    });
+  }
+
+  // Know scroll position
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+
+    if (scroll > lastScroll) {
+      nav && nav.classList.add("bg-orange-600");
+    } else {
+      nav && nav.classList.remove("bg-orange-600");
+    }
+
+    lastScroll = scroll;
+  });
+</script>

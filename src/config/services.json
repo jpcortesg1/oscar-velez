@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Instalación y reparación de cielos falsos",
+      "img": "/services/cielo-falso.jpg",
+      "description": "Yeso, madera, etc."
+    },
+    {
+      "id": 2,
+      "name": "Instalación y reparación de sistemas eléctricos",
+      "img": "/services/electricidad.jpg",
+      "description": "interruptores, enchufes, iluminación, etc."
+    },
+    {
+      "id": 3,
+      "name": "Instalación y reparación de sistemas de estuco",
+      "img": "/services/estuco.jpg",
+      "description": "Interior y exterior."
+    },
+    {
+      "id": 4,
+      "name": "Remodelación básica de hogares",
+      "img": "/services/reestructuración hogar.webp",
+      "description": "Cambios en la disposición de los espacios, cambios en los acabados, etc."
+    },
+    {
+      "id": 5,
+      "name": "Pintura y decoración ",
+      "img": "/services/pintura.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Instalación de muebles de baño y cocina.",
+      "img": "/services/cocina.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Reparaciones y mejoras en plomería",
+      "img": "/services/plomeria.jpg"
+    }
+  ]
+}

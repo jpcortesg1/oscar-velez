@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "name": "Inicio",
+      "href": "#home"
+    },
+    {
+      "name": "Sobre Nosotros",
+      "href": "#about"
+    },
+    {
+      "name": "Servicios",
+      "href": "#services"
+    },
+    {
+      "name": "Contacto",
+      "href": "#contact"
+    }
+  ]
+}
